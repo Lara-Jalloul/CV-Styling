@@ -1,0 +1,179 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    
+}
+body{
+    height:100%;
+}
+h1{
+    color:red;
+}
+h2{
+    color:red;
+}
+h3{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid black; 
+    padding-bottom: 15px;      
+}
+h3::before{
+content:"\1F534";
+}
+h4{
+    color:red;
+}
+.experience-institution::before{
+    content: "@";
+}
+
+.experience-location::before{
+content:"In";
+}
+#about p{
+    margin-right:50px;
+}
+.experience p{
+    margin-right:50px;
+}
+.experience-details span{
+    color:grey;
+}
+.skills-primary::before{
+    content:"Main";
+}
+.skills-secondary::before{
+    content:"Other";
+}
+.skills-secondary{
+    opacity:0.7;
+}
+.experience-date .experience-date-separator{
+    color:red;
+}
+.experience-details{
+    margin-left:10px;
+    margin-bottom: 10px;
+}
+.skills-primary :last-child{
+    margin-bottom:10px;
+}
+
+.experience h4{
+    margin-top:15px;
+}
+
+hgroup{
+    float:left;
+    margin-right:200px;
+    margin-left:150px;
+}
+figure{
+    padding:10px;
+    margin-right:100px;
+}
+header{
+    background-color:rgb(145, 141, 141);
+    margin-right:auto;
+    margin-left: auto;
+}
+#about{
+    float:left;
+   
+   
+}
+.content{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 50px 80px 10px 80px;
+}
+
+
+.contacts{
+    display: flex;
+    background-color: rgb(223, 23, 23);
+    flex-direction: column;
+    position: absolute;
+    width:500px;
+    top: 30px;
+  right: 0;
+  height: 100px;
+}
+
+.contacts dl{
+    display: flex;
+   
+}
+.contacts dt{
+    width: 150px;
+    color:white;
+    background-color: red;
+    
+}
+.contacts dd{
+    background-color:black;
+    line-height: 20px;
+    width:100%;
+}
+
+
+a{
+    color:red;
+    text-decoration: none;
+}
+#contact h3{
+    display:none;
+}
+.skill{
+    background-color:grey;
+     width:100%; 
+    margin-bottom: 5px;
+    padding:5px;
+
+}
+.skills-primary .skill:first-child span{
+background-color: red;
+width:50%;
+}
+
+.skills-primary .skill:nth-child(2) span{
+    background-color: red;
+    width:30%;
+}
+
+.skills-primary .skill:nth-child(3) span{
+    background-color: red;
+    width:10%;
+}
+
+.skills-secondary .skill:first-child span{
+    background-color: red;
+    width:90%;
+ }
+        
+.skills-secondary .skill:nth-child(2) span{
+    background-color: red;
+    width:50%;
+}
+        
+.skills-secondary .skill:nth-child(3) span{
+    background-color: red;
+    width:70%;
+}
+
+.skill span{
+display: inline-block;
+padding:5px;
+margin:5px;
+color:white;
+}
+.skills .skill{
+    margin:2px;
+    padding:5px;
+}
+
+
+
+
+
