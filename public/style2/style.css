@@ -1,0 +1,360 @@
+body{
+    height:100%;
+    width:100%;
+}
+hgroup h2{
+    display:none;
+}
+hgroup h1{
+   border-bottom: 1px solid #c2c4c7;
+   padding:10px;
+}
+img{
+    position:absolute;
+    top: 30px;
+  left: 800px;
+  transform: rotate(-15deg);
+  height: 100px;
+  margin-top:10px;
+}
+
+#about h3{
+    display:none;
+}
+#about p{
+    color:grey;
+    word-spacing: 10px;
+    white-space: wrap;
+    font-style: italic;
+}
+#about{
+    width:600px;
+    margin: 0px;
+    margin-bottom: 100px;
+    
+}
+section h3{
+    border-right: 1px solid black;
+    margin-bottom: 10px;
+    width: 140px;
+   padding:5px;
+
+}
+#competencies h3{
+    grid-area: title;
+   
+}
+.skills-primary{ 
+    grid-area: skill1; 
+}
+.skills-secondary{
+     grid-area:skill2;
+    }
+#competencies {
+    display:grid;
+    grid-template-areas:
+    'title skill1 skill1'
+    'title skill2 skill2 ';
+    width: 500px;
+    margin-bottom: 100px;
+   
+}
+.skills{
+    display: flex;
+    /* padding-left:10px; */
+    margin-left:10px;
+}
+.skill{
+    padding: 5px;
+    margin-right: 10px;
+    width: 115px;
+    margin-top: 10px;
+    background-color: #40817a;
+    color:white;
+    height: 30px;
+}
+.skills-secondary .skill span{
+    font-size:10px;
+    margin-top:15px;
+}
+.skills-primary .skill:first-child span::after{
+    content:"\2605 \2605  \2605 ";
+    float: right;
+    
+}
+.skills-primary .skill:nth-child(2) span::after{
+    content:"\2605 \2605  \2605 ";
+    float: right;
+    
+}
+.skills-primary .skill:nth-child(3) span::after{
+    content:"\2605 ";
+    float: right;
+    
+}
+.skills-secondary .skill:first-child span::after{
+    content:"\2605 \2605  \2605 \2605  \2605 ";
+    float: right;
+    font-size: 10px;
+    margin-top:5px;
+}
+.skills-secondary .skill:nth-child(2) span::after{
+    content:"\2605 \2605  \2605 ";
+    float: right;
+    font-size: 10px;
+    margin-top:5px;
+}
+.skills-secondary .skill:nth-child(3) span::after{
+    content:"\2605 ";
+    float: right;
+    margin-top:5px; 
+}
+
+
+#experiences:nth-child(2){
+    grid-area: exp1;
+    margin-top: 10px;
+   
+    }
+    
+ 
+#experiences:nth-child(3){
+    grid-area: exp2;
+   
+}
+
+#experiences{
+    display: grid;
+    grid-template-areas: 'experience-title exp1' 
+                        'experience-title exp2';
+                        
+}
+.experience{
+        
+    height: 200px;
+    margin-bottom: 10px;
+   margin-right: 498px;
+   width: 900px;
+    padding:5px;
+    
+}
+.experience-type{
+    color: #40817a;
+}
+.experience-institution{
+    display: none;
+}
+.experience-details{
+    float: right;
+    color:grey;
+    position: relative;
+top:-40px;
+
+}
+
+#experiences h3{
+    grid-area:experience-title;
+    display: inline-block;
+    height: 450;
+    padding: 0px;
+    width: 150px;
+}
+
+#education:nth-child(2){
+    grid-area: exp1;
+    margin-top: 10px;
+   
+    }
+    
+ 
+#education:nth-child(3){
+    grid-area: exp2;
+    
+}
+
+#education{
+    display: grid;
+    grid-template-areas: 'experience-title exp1' 
+                        'experience-title exp2';
+                        
+}
+
+#education h3{
+grid-area:experience-title;
+    display: inline-block;
+height: 450;
+padding: 0px;
+margin-top:30px;
+
+width: 150px;
+}
+
+
+#hobbies{
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+}
+#hobbies h3{
+    display: inline-block;
+    width: 140px;
+}
+
+#contact h3{
+    display: none;
+}
+
+
+.contacts dt{
+    display: none;
+}
+.contacts .contact-value{
+    display: none;
+} 
+.contacts{
+    display: flex;
+    justify-content: center;
+    margin-top: 7%;
+    
+  
+}
+.contact-email{
+    background-image:url(../images/email.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width:13%;
+    height: 100px;
+    
+    
+}
+.contact-github{
+    background-image:url(../images/github.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width:13%;
+    height: 100px;
+    margin-left: 5%;
+}
+.contact-phone{
+    background-image:url(../images/phone.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width:13%;
+    height: 100px;
+    margin-left: 5%;
+}
+.contact-facebook{
+    background-image:url(../images/facebook.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width:13%;
+    height: 100px;
+    margin-left: 3%;
+}
+.contact-skype{
+    display:none;
+}
+
+.experience{
+    margin-left:5px;
+    margin-top:10px;
+}
+.experience h4{
+   margin-bottom: 20px;
+}
+
+#education .experience{
+    margin-top:30px;
+}
+
+
+@media only screen  and (max-width:600px) {
+   
+    img{
+        display:none;
+    }
+   #contact{
+       margin-left:4px;
+       margin-bottom:50px;
+   }
+
+    
+
+    #education{
+        display: flex;
+        flex-direction: column;
+    }
+    #education h3{
+        display: inline-block;
+        border-bottom:1px solid black;
+        border-right:none;
+        height: 30px;
+        width: 150px;
+    }
+    #experiences{
+        display: flex;
+        flex-direction: column;
+    }
+    #experiences h3{
+        display: inline-block;
+        border-bottom:1px solid black;
+        border-right:none;
+        height: 30px;
+        width: 150px; 
+    }
+    #competencies{
+        display: flex;
+        flex-direction: column;
+    }
+    #competencie h3{
+        display: inline-block;
+        border-bottom:1px solid  black;
+        border-right:none;
+        height: 30%;
+        width: 150%;
+    }
+    #hobbies{
+        flex-direction: column;
+        margin-top: 50px;
+    }
+    #hobbies h3{
+        display: inline-block;
+        border-bottom:1px solid  black;
+        border-right:none;
+        height: 30px;
+        width: 150px;
+    }
+    section h3{
+        border-bottom: 1px solid black;
+        border-right:none;
+    }
+    .contacts{
+        flex-wrap: wrap;
+        justify-content: unset;
+        margin-left: 0;
+    }
+    .contact-email{
+        width: 30%;
+    }
+    .contact-facebook{
+        width: 30%;
+    }
+    .contact-github{
+        width: 30%;
+    }
+    .contact-phone{
+        width: 30%;
+    }
+    .content{
+        width:500px;
+        margin:auto;
+    }
+    #about{
+        width:100%; 
+    }
+    .experience{
+       width: 100%;
+        
+    }
+    
+}
