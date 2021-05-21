@@ -22,51 +22,11 @@ h4{
 .experience-institution::before{
     content: "@";
 }
-/*  
-@media screen and (max-width:500px){
-    header div{
-        display: block;
-        margin-left: 10px;
-    }
-    
-    }@media screen and (min-width:600px){
-        #contact h3{
-            visibility: hidden;
-            
-        }
-        #contact{
-            position:absolute;
-            top:-80px;
-            left: 700px;
-            
-          
-        }
-        .contacts  .contact-value {
-           background-color: black;
-           width: 450px;
-           padding: 5px;
-           margin: 0;
-        
-          }
-          .contacts dl {
-              width: 800px;
-              
-          }
-          .contacts dl dt{
-            width: 150px;
-            padding: 5px;
-            margin: 0;
-    
-          }}
-  */
-
 
 .experience-location::before{
 content:"In";
 }
-/* #about p{ 
-    margin-right:50px;
-}*/
+
  .experience p{ 
     margin-right:50px;
 }
@@ -235,8 +195,7 @@ dd{
     
 }
 
-  
-    }
+  }
 
 
 
